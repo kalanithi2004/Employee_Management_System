@@ -1,0 +1,291 @@
+/* =========================
+   DEPARTMENT PAGE
+========================= */
+
+.department-page {
+    width: 100%;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.department-page .page-header {
+    margin-bottom: 24px;
+}
+
+.department-page .page-header h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #111827;
+}
+
+.department-page .page-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+}
+
+.department-page .page-header button {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.department-page .page-header button:hover {
+    background: #1d4ed8;
+}
+
+
+/* =========================
+   DEPARTMENT TABLE
+========================= */
+
+.department-page table {
+    width: 100%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.department-page th {
+    background: #f9fafb;
+    color: #6b7280;
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.department-page td {
+    padding: 16px 18px;
+    color: #374151;
+    font-size: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.department-page tbody tr:hover {
+    background: #f9fafb;
+}
+
+.department-page tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ID */
+
+.department-page td:first-child {
+    width: 100px;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+
+/* Department name */
+
+.department-page td:nth-child(2) {
+    color: #111827;
+    font-weight: 600;
+}
+
+
+/* =========================
+   TABLE ACTIONS
+========================= */
+
+.department-page td:last-child {
+    width: 180px;
+}
+
+.department-page td:last-child button {
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+/* Edit */
+
+.department-page td:last-child button:first-child {
+    background: #dbeafe;
+    color: #2563eb;
+}
+
+.department-page td:last-child button:first-child:hover {
+    background: #bfdbfe;
+}
+
+/* Delete */
+
+.department-page td:last-child button:last-child {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.department-page td:last-child button:last-child:hover {
+    background: #fecaca;
+}
+
+
+/* =========================
+   DEPARTMENT FORM
+========================= */
+
+.department-form-page {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+.department-form-page h1 {
+    margin: 0 0 24px;
+    font-size: 26px;
+    color: #111827;
+}
+
+.department-form-page form {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.department-form-page form > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.department-form-page label {
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.department-form-page input {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+    color: #111827;
+}
+
+.department-form-page input:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+/* =========================
+   FORM BUTTONS
+========================= */
+
+.department-form-page form > div:last-child {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.department-form-page form > div:last-child button {
+    border: none;
+    padding: 10px 18px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Submit */
+
+.department-form-page form > div:last-child button[type="submit"] {
+    background: #2563eb;
+    color: white;
+}
+
+.department-form-page form > div:last-child button[type="submit"]:hover {
+    background: #1d4ed8;
+}
+
+/* Cancel */
+
+.department-form-page form > div:last-child button[type="button"] {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.department-form-page form > div:last-child button[type="button"]:hover {
+    background: #e5e7eb;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.department-page > p:not(.error-message) {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    color: #6b7280;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .department-page .page-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .department-page .page-header button {
+        width: 100%;
+    }
+
+    .department-page table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .department-form-page {
+        max-width: 100%;
+    }
+
+    .department-form-page form {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .department-form-page form > div:last-child {
+        flex-direction: column;
+    }
+
+    .department-form-page form > div:last-child button {
+        width: 100%;
+    }
+}

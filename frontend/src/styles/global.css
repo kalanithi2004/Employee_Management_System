@@ -1,0 +1,285 @@
+/* ================================
+   GLOBAL RESET
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    background: #f5f7fb;
+    color: #111827;
+
+    font-size: 14px;
+}
+
+
+/* ================================
+   COMMON
+================================ */
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* ================================
+   COMMON PAGE HEADER
+================================ */
+
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111827;
+}
+
+.page-header p {
+    margin-top: 5px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ================================
+   COMMON PRIMARY BUTTON
+================================ */
+
+.primary-btn {
+    border: none;
+
+    background: #2563eb;
+    color: white;
+
+    padding: 10px 16px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.primary-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================================
+   COMMON SECONDARY BUTTON
+================================ */
+
+.secondary-btn {
+    border: 1px solid #d1d5db;
+
+    background: white;
+    color: #374151;
+
+    padding: 10px 16px;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.secondary-btn:hover {
+    background: #f9fafb;
+}
+
+
+/* ================================
+   COMMON DELETE BUTTON
+================================ */
+
+.delete-btn {
+    border: none;
+
+    background: #fee2e2;
+    color: #dc2626;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.delete-btn:hover {
+    background: #fecaca;
+}
+
+
+/* ================================
+   COMMON EDIT BUTTON
+================================ */
+
+.edit-btn {
+    border: none;
+
+    background: #dbeafe;
+    color: #2563eb;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.edit-btn:hover {
+    background: #bfdbfe;
+}
+
+
+/* ================================
+   COMMON VIEW BUTTON
+================================ */
+
+.view-btn {
+    border: none;
+
+    background: #f3f4f6;
+    color: #374151;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.view-btn:hover {
+    background: #e5e7eb;
+}
+
+
+/* ================================
+   ERROR
+================================ */
+
+.error-message {
+    background: #fef2f2;
+    color: #dc2626;
+
+    border: 1px solid #fecaca;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+
+    margin-bottom: 18px;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   SUCCESS
+================================ */
+
+.success-message {
+    background: #ecfdf5;
+    color: #059669;
+
+    border: 1px solid #a7f3d0;
+
+    padding: 12px 15px;
+
+    border-radius: 7px;
+
+    margin-bottom: 18px;
+
+    font-size: 13px;
+}
+
+
+/* ================================
+   COMMON CARD
+================================ */
+
+.card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 10px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+
+/* ================================
+   LOADING
+================================ */
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 200px;
+
+    color: #6b7280;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    .page-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .page-header h1 {
+        font-size: 23px;
+    }
+}

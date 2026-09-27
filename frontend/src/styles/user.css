@@ -1,0 +1,135 @@
+/* =========================
+   USERS PAGE
+========================= */
+
+.users-page {
+    width: 100%;
+}
+
+.users-page .page-header {
+    margin-bottom: 24px;
+}
+
+.users-page .page-header h1 {
+    margin: 0;
+    font-size: 26px;
+    color: #111827;
+}
+
+.users-page .page-header p {
+    margin: 6px 0 0;
+    color: #6b7280;
+}
+
+
+/* =========================
+   USERS TABLE
+========================= */
+
+.users-page table {
+    width: 100%;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+}
+
+.users-page th {
+    background: #f9fafb;
+    color: #6b7280;
+    text-align: left;
+    padding: 14px 18px;
+    font-size: 12px;
+    font-weight: 700;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.users-page td {
+    padding: 15px 18px;
+    color: #374151;
+    font-size: 14px;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.users-page tbody tr:hover {
+    background: #f9fafb;
+}
+
+.users-page tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================
+   USER ID
+========================= */
+
+.users-page td:first-child {
+    width: 90px;
+    color: #6b7280;
+    font-weight: 600;
+}
+
+
+/* =========================
+   USERNAME
+========================= */
+
+.users-page td:nth-child(2) {
+    color: #111827;
+    font-weight: 600;
+}
+
+
+/* =========================
+   ROLE
+========================= */
+
+.users-page td:nth-child(4) {
+    font-weight: 600;
+}
+
+.users-page td:nth-child(4)::first-letter {
+    text-transform: uppercase;
+}
+
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.users-page > p:not(.error-message) {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    color: #6b7280;
+}
+
+
+/* =========================
+   LOADING
+========================= */
+
+.users-page + h2,
+.users-page h2 {
+    color: #6b7280;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    .users-page table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+}
